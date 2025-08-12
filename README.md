@@ -15,10 +15,10 @@ Este é o meu projeto final para a cadeira de Autômatos Celulares.
 Ao rodar o script com a "Gosper Glider Gun" como padrão inicial, estes são os arquivos que ele cria:
 
 **1. A animação (`game_of_life_simulation.gif`)**
-![Animação da Simulação](game_of_life_simulation.gif)
+![Animação da Simulação](results/game_of_life_simulation.gif)
 
 **2. O gráfico de análise (`density_analysis.png`)**
-![Gráfico de Densidade](density_analysis.png)
+![Gráfico de Densidade](results/density_analysis.png)
 
 ## Como Rodar o Projeto
 
