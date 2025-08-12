@@ -1,30 +1,31 @@
-# Jogo da Vida de Conway: Simulação Avançada com Análise Quantitativa
+# Jogo da Vida de Conway - Simulação e Análise
 
-Este projeto é uma implementação avançada do "Jogo da Vida" de John Conway, desenvolvida para a disciplina de Autômatos Celulares. O objetivo é não apenas visualizar a beleza dos padrões emergentes, mas também analisar quantitativamente a dinâmica do sistema.
+Este é o meu projeto final para a cadeira de Autômatos Celulares.
 
-O simulador é construído em Python, `NumPy` e `Matplotlib`, com foco em eficiência e análise de resultados.
+É uma implementação em Python do clássico Jogo da Vida de Conway, mas com alguns recursos a mais que adicionei para permitir uma análise mais interessante do que acontece na simulação.
 
-## ✨ Funcionalidades "Next Level"
+## O que ele faz
 
-- **Visualização Dinâmica:** Gera uma animação em GIF de alta qualidade da evolução do autômato.
-- **Análise Quantitativa:** Plota e salva um gráfico da **densidade de células vivas (%)** por geração, permitindo uma análise real do comportamento do sistema.
-- **Banco de Padrões:** Inclui uma biblioteca de padrões iniciais clássicos, como a **Gosper Glider Gun**, **Pulsar**, e um modo **aleatório** para testar a emergência de ordem a partir do caos.
+* **Animação da Simulação:** O script gera um arquivo `.gif` que mostra a evolução dos padrões na grade, geração por geração.
+* **Gráfico de Densidade:** Além de só olhar a animação, achei que seria útil medir o que está acontecendo. Por isso, o programa também gera um gráfico (`.png`) que mostra a porcentagem de células vivas a cada geração. É uma forma legal de ver como a "população" total do sistema se comporta ao longo do tempo.
+* **Padrões Clássicos:** No código, você pode escolher facilmente iniciar a simulação com alguns padrões famosos, como a **"Gosper Glider Gun"**, o **"Pulsar"**, ou simplesmente com um grid aleatório para ver o que acontece.
 
-## 🔬 Resultados Gerados
+## Exemplo de Saída
 
-Ao executar o script, três arquivos principais são gerados:
+Ao rodar o script com a "Gosper Glider Gun" como padrão inicial, estes são os arquivos que ele cria:
 
-1.  **`game_of_life_simulation.gif`**: A animação da simulação.
-    ![Animação da Simulação](results/game_of_life_simulation.gif)
+**1. A animação (`game_of_life_simulation.gif`)**
+![Animação da Simulação](game_of_life_simulation.gif)
 
-2.  **`density_analysis.png`**: O gráfico de análise quantitativa.
-    ![Gráfico de Densidade](results/density_analysis.png)
+**2. O gráfico de análise (`density_analysis.png`)**
+![Gráfico de Densidade](density_analysis.png)
 
-## 🚀 Como Executar
+## Como Rodar o Projeto
 
-### Pré-requisitos
+É bem simples.
 
-É necessário ter Python 3 instalado, juntamente com as bibliotecas: `numpy`, `matplotlib`, `pillow`.
+**1. Instalar as dependências:**
 
+Primeiro, você precisa ter o `numpy`, `matplotlib` e `pillow` instalados. Se não tiver, pode instalar com pip:
 ```bash
 pip install numpy matplotlib pillow
